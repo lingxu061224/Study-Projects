@@ -1,0 +1,192 @@
+.hr
+{
+	width: 100%;
+	height: 2px;
+	margin: 20px auto;
+}
+
+h2
+{
+	margin: 0;
+	color: #eee;
+}
+
+nav
+{
+	background: #ccc;
+	height: 40px;
+}
+
+nav ul
+{
+	list-style: none;
+	margin: 0;
+}
+
+nav ul li
+{
+	display: inline-block;
+	line-height: 40px;
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li a
+{
+	line-height: inherit;
+	text-decoration: none;
+	display: inline-block;
+	height: inherit;
+	color: #fff;
+}
+
+.logo
+{
+	float: left;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.logo a
+{
+	text-decoration: none;
+	color: #fff;
+	height: 40px;
+	padding: 10px;
+}
+
+#banner
+{
+	background: #777;
+	height: 400px;
+}
+
+#banner .inner
+{
+	max-width: 30%;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	top: 80px;
+	color: #fff;
+}
+#banner .inner .hr
+{
+	background: #eee;
+	margin: 0 auto;
+	width: 30%;
+}
+
+#banner .inner h1
+{
+	margin: 0;
+}
+
+#banner .inner p
+{
+	line-height: 30px;
+	margin: 10px;
+}
+
+p
+{
+	font-size: 18px;
+	color: #eee;
+}
+
+button
+{
+	border: none;
+	background: #333;
+	color: #eee;
+}
+
+#banner .inner button
+{
+	padding: 14px 40px;
+}
+
+.green
+{
+	background: green; 
+	color:#fff;
+	text-align: center;
+	padding: 100px;
+}
+
+.green .hr
+{
+	width: 60%;
+	background: #eee;
+}
+
+.wrapper
+{
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+span
+{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #eee;
+	transform: rotate(45deg);
+	margin: 20px;
+}
+
+.icons
+{
+	margin-top: 30px;
+}
+
+.gray
+{
+	background: #000;
+
+}
+
+.article:nth-child(odd)
+{
+	background: rgba(255,255,255,0.5);
+}
+
+.gray .imgine
+{
+	width: 45%;
+}
+
+.gray .imgine img
+{
+	width: 100%;
+}
+
+.gray .article
+{
+	width: 50%;
+	text-align: center;
+	display: inline-block;
+	line-height: inherit;
+}
+
+.article
+{
+	padding-top: 10%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+
+#first > div , #second > div , #third > div
+{
+	float: left;
+}
+
+#first:after , #second:after , #third:after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+

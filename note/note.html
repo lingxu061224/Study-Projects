@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>投票</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+	</script>
+
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- 导航条跟随效果 -->
+	<script type="text/javascript" >  
+	    $(document).ready(function(){         
+	        $(window).scroll(function(){  
+	            var t = document.body.scrollTop||document.documentElement.scrollTop;  
+	            if(t>0){  
+	                $("#nav").css({  
+	                    "position":"fixed",  
+	                    "top"     :"0px",  
+	                    "left"    :"0px"  
+	                });  
+	            }else{   
+	                $("#nav").css({  
+	                    "position":"",  
+	                    "top"     :"",  
+	                    "left"    :""  
+	                });  
+	            }  
+	        });  
+	    });  
+	</script>
+</head>
+<body>
+	<header>
+		<div class="row" id="nav">
+		    <div class="col-md-6"><a href="#">候选人</a></div>
+		    <div class="col-md-6"><a href="res.html">投票结果</a></div>
+		</div>
+		<div class="title"></div>
+	</header>
+
+	<div class="content">
+		<img src="img/banner.jpg" alt="">
+		<div class="destime"></div>
+		<div id="masonry" class="container-fluid">
+		<div class="box">
+			<img src="img/pic01.jpg" id="01">
+			<!-- <div class="checkbox" id="1">
+			    <label>
+			        <input type="checkbox"> 投给他1
+			    </label>
+			</div> -->
+			<div class="radio">
+			    <label>
+			    	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"><hr><div id="1"></div>
+			    </label>
+			</div>
+		</div>
+		<div class="box">
+			<img src="img/pic02.jpg" id="02">
+			<!-- <div class="checkbox" id="2">
+				<label>
+				    <input type="checkbox"> 投给他2
+				</label>
+			</div> -->
+			<div class="radio">
+			    <label>
+			    	<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><hr><div id="2"></div>
+			    </label>
+			</div>
+		</div>
+		<div class="box">
+		    <img src="img/pic03.jpg" id="03">
+		    <!-- <div class="checkbox" id="3">
+			    <label>
+			        <input type="checkbox"> 投给他3
+			    </label>
+			</div> -->
+			<div class="radio">
+			    <label>
+			    	<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"><hr><div id="3"></div>
+			    </label>
+			</div>
+		</div>
+		<div class="box">
+		    <img src="img/pic01.jpg" id="04">
+		   <!--  <div class="checkbox" id="4">
+			    <label>
+			        <input type="checkbox"> 投给他4
+			    </label>
+			</div> -->
+			<div class="radio">
+			  	<label>
+			    	<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"><hr><div id="4"></div>
+			    </label>
+			</div>
+		</div>
+		<div class="box">
+		    <img src="img/pic02.jpg" id="05">
+		   <!--  <div class="checkbox" id="5">
+			    <label>
+			        <input type="checkbox"> 投给他5
+			    </label>
+			</div> -->
+			<div class="radio">
+			  	<label>
+			    	<input type="radio" name="optionsRadios" id="optionsRadios5" value="option5"><hr><div id="5"></div>
+			    </label>
+			</div>
+		</div>
+		<div class="box">
+		    <img src="img/pic02.jpg" id="06">
+		   <!--  <div class="checkbox" id="6">
+			    <label>
+			        <input type="checkbox"> 投给他6
+			    </label>
+			</div> -->
+			<div class="radio">
+			  	<label>
+			    	<input type="radio" name="optionsRadios" id="optionsRadios6" value="option6"><hr><div id="6"></div>
+			    </label>
+			</div>
+		</div>
+		<div class="box">
+		    <img src="img/pic02.jpg" id="07">
+		   <!--  <div class="checkbox" id="7">
+			    <label>
+			        <input type="checkbox"> 投给他7
+			    </label>
+			</div> -->
+			<div class="radio">
+			  	<label>
+			    	<input type="radio" name="optionsRadios" id="optionsRadios7" value="option7"><hr><div id="7"></div>
+			    </label>
+			</div>
+		</div>
+		<div class="box">
+		    <img src="img/pic02.jpg" id="08">
+		   <!--  <div class="checkbox" id="8">
+			    <label>
+			        <input type="checkbox"> 投给他8
+			    </label>
+			</div> -->
+			<div class="radio">
+			  	<label>
+			    	<input type="radio" name="optionsRadios" id="optionsRadios8" value="option8"><hr><div id="8"></div>
+			    </label>
+			</div>
+		</div>
+		<div class="box">
+		    <img src="img/pic02.jpg" id="09">
+		   <!--  <div class="checkbox" id="9">
+			    <label>
+			        <input type="checkbox"> 投给他9
+			    </label>
+			</div> -->
+			<div class="radio">
+			  	<label>
+			    	<input type="radio" name="optionsRadios" id="optionsRadios9" value="option9"><hr><div id="9"></div>
+			    </label>
+			</div>
+		</div>
+		<div class="box">
+		    <img src="img/pic02.jpg" id="010">
+		   <!--  <div class="checkbox" id="10">
+			    <label>
+			        <input type="checkbox"> 投给他10
+			    </label>
+			</div> -->
+			<div class="radio">
+			  	<label>
+			    	<input type="radio" name="optionsRadios" id="optionsRadios10" value="option10"><hr><div id="10"></div>
+			    </label>
+			</div>
+		</div>
+		</div>
+		<button class="sub" onclick="">提交</button>
+	</div>
+	<footer>
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aliquam quasi quis molestiae optio vel, dolorem amet nulla quam a. Autem odit maiores facere ut sunt sed quisquam modi ullam.</div>
+	</footer>
+	<script>
+		$(document).ready(function() {
+
+				// 标题获取
+				htmltitle = $.ajax({
+					url: 'http://test.ganjiacheng.cn/testapi/api.php?do=GetHead',
+					type: 'POST',
+					dataType: 'json',
+				})
+				.done(function() {
+					console.log("success");
+				})
+				.fail(function() {
+					console.log("error");
+				})
+				.always(function() {
+					console.log("complete");
+					var json = JSON.parse(htmltitle.responseText);  
+					console.log(json.head);
+					$(".title").html(json.head);
+				});
+
+				// 简介时间获取
+				htmldestime = $.ajax({
+					url: 'http://test.ganjiacheng.cn/testapi/api.php?do=GetDescribe',
+					type: 'POST',
+					dataType: 'json',
+				})
+				.done(function() {
+					console.log("success");
+				})
+				.fail(function() {
+					console.log("error");
+				})
+				.always(function() {
+					console.log("complete");
+					var json = JSON.parse(htmldestime.responseText);
+					console.log(json.describe);
+					console.log(json.starttime);
+					console.log(json.endtime);
+					$(".destime").html("简介：" + json.describe + "开始于:" + json.starttime + "截至于" + json.endtime);
+				});
+
+				// 候选人资料获取
+				htmlman = $.ajax({
+					url: 'http://test.ganjiacheng.cn/testapi/api.php?do=GetData',
+					type: 'POST',
+					dataType: 'json',
+				})
+				.done(function() {
+					console.log("success");
+				})
+				.fail(function() {
+					console.log("error");
+					while(json.code != 1){
+						htmlman = $.ajax({
+						url: 'http://test.ganjiacheng.cn/testapi/api.php?do=GetData',
+						type: 'POST',
+						dataType: 'json',
+						})
+						var json = JSON.parse(htmlman.responseText);
+					}
+				})
+				.always(function() {
+					console.log("complete");
+					var json = JSON.parse(htmlman.responseText);
+					console.log(json.code);
+					$("#1").html("编号" + (json.data[0].id+1) + json.data[0].name + json.data[0].describe);
+					$("#2").html("编号" + (json.data[1].id+1) + json.data[1].name + json.data[1].describe);
+					$("#3").html("编号" + (json.data[2].id+1) + json.data[2].name + json.data[2].describe);
+					$("#4").html("编号" + (json.data[3].id+1) + json.data[3].name + json.data[3].describe);
+					$("#5").html("编号" + (json.data[4].id+1) + json.data[4].name + json.data[4].describe);
+					$("#6").html("编号" + (json.data[5].id+1) + json.data[5].name + json.data[5].describe);
+					$("#7").html("编号" + (json.data[6].id+1) + json.data[6].name + json.data[6].describe);
+					$("#8").html("编号" + (json.data[7].id+1) + json.data[7].name + json.data[7].describe);
+					$("#9").html("编号" + (json.data[8].id+1) + json.data[8].name + json.data[8].describe);
+					$("#10").html("编号" + (json.data[9].id+1) + json.data[9].name + json.data[9].describe);
+					$("#01").attr('src', json.data[0].url);
+					$("#02").attr('src', json.data[1].url);
+					$("#03").attr('src', json.data[2].url);
+					$("#04").attr('src', json.data[3].url);
+					$("#05").attr('src', json.data[4].url);
+					$("#06").attr('src', json.data[5].url);
+					$("#07").attr('src', json.data[6].url);
+					$("#08").attr('src', json.data[7].url);
+					$("#09").attr('src', json.data[8].url);
+					$("#010").attr('src', json.data[9].url);
+				});
+				/* Act on the event */
+			// $(".checkbox").on("click",function() {
+			// 	choose = null;
+			// 	choose = $(this).text();
+			// 	console.log(choose);
+			// 	/* Act on the event */
+			// });
+			$(".radio").on("click",function() {
+				choose = null;
+				gett = $(this).text();
+				choose = gett.match(/\d+(\.\d+)?/g) - 1;
+				if (choose != null) {
+					$("button").show('slow/400/fast', function() { });
+				}
+				console.log(choose);
+				/* Act on the event */
+			});
+		});
+		$(".sub").on('click',function() {
+			while(choose!=null&&mymessage!=true){
+			var mymessage=confirm("你确定要提交吗？");
+			}
+			htmlres = $.ajax({
+				url: 'http://test.ganjiacheng.cn/testapi/api.php?do=SubData',
+				type: 'POST',
+				dataType: 'json',
+				data: {id: 'choose'},
+			})
+			.done(function() {
+				console.log("success");
+				alert("已提交成功");
+				window.open("");
+			})
+			.fail(function() {
+				console.log("error");
+				while(json.code != 1){
+					htmlres = $.ajax({
+					url: 'http://test.ganjiacheng.cn/testapi/api.php?do=SubData',
+					type: 'POST',
+					dataType: 'json',
+					data: {id: 'choose'},
+					})
+					var json = JSON.parse(htmlres.responseText);
+				}
+			})
+			.always(function() {
+				console.log("complete");
+				var json = JSON.parse(htmlres.responseText);
+				console.log(json.code);
+			});
+			/* Act on the event */
+		});
+	</script>
+</body>
+</html>
